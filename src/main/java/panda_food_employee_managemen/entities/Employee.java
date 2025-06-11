@@ -18,89 +18,89 @@ public class Employee {
 	private String empDesignation;
 	private String doj;
 	private String location;
+	private String email;
 	
 	
 	public Employee() {
-		
 	}
 
-
-	public Employee(int employeeId, String empFirstName, String empLastName, String empDesignation, String doj,
-			String location) {
-		super();
+	public Employee(int employeeId, String empFirstName, String empLastName, String empDesignation, String doj, String location, String email) {
 		this.employeeId = employeeId;
 		this.empFirstName = empFirstName;
 		this.empLastName = empLastName;
 		this.empDesignation = empDesignation;
 		this.doj = doj;
 		this.location = location;
+		this.email = email;
 	}
-
 
 	public int getEmployeeId() {
 		return employeeId;
 	}
 
-
 	public void setEmployeeId(int employeeId) {
 		this.employeeId = employeeId;
 	}
-
 
 	public String getEmpFirstName() {
 		return empFirstName;
 	}
 
-
 	public void setEmpFirstName(String empFirstName) {
 		this.empFirstName = empFirstName;
 	}
-
 
 	public String getEmpLastName() {
 		return empLastName;
 	}
 
-
 	public void setEmpLastName(String empLastName) {
 		this.empLastName = empLastName;
 	}
-
 
 	public String getEmpDesignation() {
 		return empDesignation;
 	}
 
-
 	public void setEmpDesignation(String empDesignation) {
 		this.empDesignation = empDesignation;
 	}
-
 
 	public String getDoj() {
 		return doj;
 	}
 
-
 	public void setDoj(String doj) {
 		this.doj = doj;
 	}
-
 
 	public String getLocation() {
 		return location;
 	}
 
-
 	public void setLocation(String location) {
 		this.location = location;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
 	@Override
 	public String toString() {
-		return "Employee [employeeId=" + employeeId + ", empFirstName=" + empFirstName + ", empLastName=" + empLastName
-				+ ", empDesignation=" + empDesignation + ", doj=" + doj + ", location=" + location + "]";
+		return "Employee{" +
+				"employeeId=" + employeeId +
+				", empFirstName='" + empFirstName + '\'' +
+				", empLastName='" + empLastName + '\'' +
+				", empDesignation='" + empDesignation + '\'' +
+				", doj='" + doj + '\'' +
+				", location='" + location + '\'' +
+				", email='" + email + '\'' +
+				'}';
 	}
 	
 	
