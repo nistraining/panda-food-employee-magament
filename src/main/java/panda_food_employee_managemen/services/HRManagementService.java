@@ -15,9 +15,9 @@ public class HRManagementService {
 	private HRManagementRepository hrManagementRepo;
 	
 	public Employee addEmployee(Employee employee) {
-		if (hrManagementRepo.findByEmail(employee.getEmail()) != null) {
-			throw new IllegalArgumentException("Employee with this email already exists.");
-		}
+//		if (hrManagementRepo.findByEmail(employee.getEmail()) != null) {
+//			throw new IllegalArgumentException("Employee with this email already exists.");
+//		}
 		return hrManagementRepo.save(employee);
 	}
 	
